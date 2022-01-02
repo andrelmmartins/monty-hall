@@ -1,0 +1,69 @@
+.presente {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 45px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.tampa {
+    height: 30%;
+    width: 100%;
+    background: forestgreen;
+    margin-bottom: 1px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.corpo {    
+    width: 90%;
+    height: 100%;
+    background: forestgreen;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    border-radius: 0 0 2px 2px;
+}
+
+.fita {
+    background: red;
+    height: 100%;
+    width: 20%;
+    margin: auto;
+}
+
+.fita2 {
+    background: red;
+    height: 25%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.laço {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.laço span:nth-child(1), .laço span:nth-child(2) {
+    border: 4px solid red;
+    width: 40%;
+    height: 100%;
+}
+
+.laço span:nth-child(1) {
+    border-radius: 80px 100px 0px 50px;
+}
+
+.laço span:nth-child(2) {
+    border-radius: 100px 80px 50px 00px;
+}

@@ -1,0 +1,116 @@
+.porta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.porta .madeira {
+    margin-top: 35px;
+    width: 100px;
+    height: 170px;
+    border-radius: 2px;
+    border: 3px solid #592F25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.porta .madeira .numero {
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.porta .madeira .numero span {
+    background-color: #592F25;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100% 100% 0 0 ;
+    transition: 0.3s;
+}
+
+.porta .madeira .macaneta {
+    width: 10px;
+    height: 10px;
+    background-color: #592F25;
+    border-radius: 100%;
+    margin: 30px 0 0 7px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.porta .chao {
+    width: 110px;
+    height: 10px;
+    background-color: #592F25;
+    border-radius: 3px 3px 1px 1px;
+    margin: -3px 5px 0px 5px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.porta .madeira::before {
+    width: 100%;
+    height: 100%;
+    background: #A66844;
+    content: '';
+    display: block;
+    transition: 0.3s;
+    transform-origin: right;
+    transform: rotateX(180deg);
+    z-index: 1;
+}
+
+.porta.selecionada .madeira {
+    border: 3px solid #fafafa
+}
+
+.porta.selecionada .madeira .numero span, .porta.selecionada .madeira .macaneta, .porta.selecionada .chao  {
+    background: #fafafa;
+    color: #592F25;
+}
+
+.porta.selecionada.aberta .madeira {
+    border: 3px solid #592F25;
+}
+
+.porta.selecionada.aberta .madeira .numero span {
+    background: #592F25;
+    color: #fafafa;
+}
+
+.porta.aberta .madeira::before {
+    transform: perspective(800px) rotateX(180deg) rotateY(-100deg);
+}
+
+.porta.aberta .madeira .macaneta, .porta.aberta .chao{
+    display: none;  
+    background: #592F25;
+    color: #fafafa;
+}
+
+.porta.aberta .chao {
+    display: block
+}
+
+.porta .presente {
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
+    z-index: 0; 
+}  

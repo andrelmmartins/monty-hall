@@ -1,0 +1,29 @@
+.portas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.botao button {
+    background: none;
+    border: 1px solid #fafafa;
+    border-radius: 4px;
+    font-family: Poppins;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.botao button span {
+    font-size: 10px;
+    margin-right: 10px;
+}

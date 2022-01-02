@@ -1,0 +1,23 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  width: 100vw;
+  height: 100vh;
+  background: #303030;
+  color: #fafafa;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tela {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
