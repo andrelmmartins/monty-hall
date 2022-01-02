@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 import Porta from '../../../components/Porta';
-import styles from '../../../styles/Jogo.module.css'
+import styles from '../../../styles/Jogo.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -20,6 +21,10 @@ export default function Jogo() {
 
     return (
         <div className="tela">
+
+        <Head>
+            <title>Porta Premiada</title>
+        </Head>
 
         <div className={styles.portas}>
             {
