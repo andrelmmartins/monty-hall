@@ -44,7 +44,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .botoes button {
@@ -54,7 +53,7 @@
     height: 50px;
     color: #fafafa;
     font-family: poppins;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
@@ -63,4 +62,24 @@
 .botoes button:hover {
     background: #fafafa;
     color: #303030;
+}
+
+@media screen and (max-width: 500px) {
+
+    .titulo h1 {
+        font-size: 30px
+    }
+
+    .titulo .presente {
+        transform: scale(0.7)
+                rotate(20deg)
+                translate(-12px, 15px);
+    }
+
+    .botoes button {
+        width: 40px;
+        height: 40px;
+        margin: 3px;
+        border-radius: 4px;
+    }
 }

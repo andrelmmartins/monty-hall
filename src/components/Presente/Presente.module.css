@@ -67,3 +67,26 @@
 .laço span:nth-child(2) {
     border-radius: 100px 80px 50px 00px;
 }
+
+@media screen and (max-width: 500px) {
+
+    .presente {
+        width: 30px;
+        height: 35px;
+    }
+        
+    .tampa {
+        border-radius: 1px;
+    }
+
+    .corpo {    
+        border-radius: 0 0 1px 1px;
+    }
+
+    .laço span:nth-child(1), .laço span:nth-child(2) {
+        border: 3px solid red;
+        width: 40%;
+        height: 100%;
+    }
+
+}

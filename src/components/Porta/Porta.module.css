@@ -114,3 +114,37 @@
     justify-self: center;
     z-index: 0; 
 }  
+
+@media screen and (max-width: 500px) {
+
+    .porta .madeira {
+        margin-top: 25px;
+        width: 70px;
+        height: 130px;
+        border: 2px solid #592F25;
+    }
+    
+    .porta .madeira .numero {
+        top: -20px;
+    }
+    
+    .porta .madeira .numero span {
+        width: 20px;
+        height: 20px;
+        font-size: 8px;
+    }
+    
+    .porta .madeira .macaneta {
+        width: 7px;
+        height: 7px;
+        margin: 30px 0 0 7px;
+        border-radius: 50%;
+    }
+
+    .porta .chao {
+        width: 80px;
+        height: 7px;
+        margin: -2px 3px 0px 3px;
+    }
+
+}
